@@ -1,0 +1,37 @@
+2017-06-19 13:46:36,595 - INFO  [main:QuorumPeerConfig@90] - Reading configuration from: /Users/wei/work/tools/zookeeper-3.3.6/bin/../conf/zoo.cfg
+2017-06-19 13:46:36,599 - WARN  [main:QuorumPeerMain@105] - Either no config or no quorum defined in config, running  in standalone mode
+2017-06-19 13:46:36,625 - INFO  [main:QuorumPeerConfig@90] - Reading configuration from: /Users/wei/work/tools/zookeeper-3.3.6/bin/../conf/zoo.cfg
+2017-06-19 13:46:36,626 - INFO  [main:ZooKeeperServerMain@94] - Starting server
+2017-06-19 13:46:36,637 - INFO  [main:Environment@97] - Server environment:zookeeper.version=3.3.6-1366786, built on 07/29/2012 06:22 GMT
+2017-06-19 13:46:36,637 - INFO  [main:Environment@97] - Server environment:host.name=localhost
+2017-06-19 13:46:36,637 - INFO  [main:Environment@97] - Server environment:java.version=1.8.0_131
+2017-06-19 13:46:36,638 - INFO  [main:Environment@97] - Server environment:java.vendor=Oracle Corporation
+2017-06-19 13:46:36,638 - INFO  [main:Environment@97] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre
+2017-06-19 13:46:36,638 - INFO  [main:Environment@97] - Server environment:java.class.path=/Users/wei/work/tools/zookeeper-3.3.6/bin/../build/classes:/Users/wei/work/tools/zookeeper-3.3.6/bin/../build/lib/*.jar:/Users/wei/work/tools/zookeeper-3.3.6/bin/../zookeeper-3.3.6.jar:/Users/wei/work/tools/zookeeper-3.3.6/bin/../lib/log4j-1.2.15.jar:/Users/wei/work/tools/zookeeper-3.3.6/bin/../lib/jline-0.9.94.jar:/Users/wei/work/tools/zookeeper-3.3.6/bin/../src/java/lib/*.jar:/Users/wei/work/tools/zookeeper-3.3.6/bin/../conf:
+2017-06-19 13:46:36,638 - INFO  [main:Environment@97] - Server environment:java.library.path=/Users/wei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2017-06-19 13:46:36,638 - INFO  [main:Environment@97] - Server environment:java.io.tmpdir=/var/folders/wb/km74drzs29n3l2wkn5cdv76c0000gn/T/
+2017-06-19 13:46:36,639 - INFO  [main:Environment@97] - Server environment:java.compiler=<NA>
+2017-06-19 13:46:36,639 - INFO  [main:Environment@97] - Server environment:os.name=Mac OS X
+2017-06-19 13:46:36,639 - INFO  [main:Environment@97] - Server environment:os.arch=x86_64
+2017-06-19 13:46:36,639 - INFO  [main:Environment@97] - Server environment:os.version=10.12.5
+2017-06-19 13:46:36,639 - INFO  [main:Environment@97] - Server environment:user.name=wei
+2017-06-19 13:46:36,640 - INFO  [main:Environment@97] - Server environment:user.home=/Users/wei
+2017-06-19 13:46:36,640 - INFO  [main:Environment@97] - Server environment:user.dir=/Users/wei/Documents/keep-running
+2017-06-19 13:46:36,651 - INFO  [main:ZooKeeperServer@673] - tickTime set to 2000
+2017-06-19 13:46:36,651 - INFO  [main:ZooKeeperServer@682] - minSessionTimeout set to -1
+2017-06-19 13:46:36,651 - INFO  [main:ZooKeeperServer@691] - maxSessionTimeout set to -1
+2017-06-19 13:46:36,683 - INFO  [main:NIOServerCnxn$Factory@143] - binding to port 0.0.0.0/0.0.0.0:2181
+2017-06-19 13:46:36,684 - FATAL [main:ZooKeeperServerMain@62] - Unexpected exception, exiting abnormally
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67)
+	at org.apache.zookeeper.server.NIOServerCnxn$Factory.<init>(NIOServerCnxn.java:144)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:108)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:85)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.main(ZooKeeperServerMain.java:51)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:108)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:76)
